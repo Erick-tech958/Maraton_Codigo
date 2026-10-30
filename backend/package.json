@@ -1,0 +1,25 @@
+{
+  "name": "carreras-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "init-db": "node src/init-db.js",
+    "test": "node --test test/category.test.js",
+    "test:integration": "node --test test/api.test.js",
+    "db:watch": "node src/watch-users.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "express-rate-limit": "^8.1.0",
+    "mysql2": "^3.15.0"
+  }
+}
